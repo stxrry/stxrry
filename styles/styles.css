@@ -3,6 +3,21 @@ body {
   background-color: #f0e8c5;
 }
 
+.ml16 {
+  color: #72e9ff;
+  padding: 40px 0;
+  font-weight: 700;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+  overflow: hidden;
+}
+
+.ml16 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+
 div {
   margin-top: 15px;
 }
