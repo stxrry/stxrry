@@ -1,7 +1,11 @@
+/* first website attempt */
+
 body {
   text-align: center;
   background-color: #ebfeff;
 }
+
+/* moving text attempt */
 
 .ml16 {
   color: #72e9ff;
@@ -18,6 +22,8 @@ body {
   line-height: 1em;
 }
 
+/* first website attempt pictures */
+
 div {
   margin-top: 15px;
 }
@@ -31,4 +37,73 @@ div {
   margin-right: 25px;
   margin-left: 25px;
   background-color: white;
+}
+
+/* animated menu bar */
+
+body {
+  background-color: #141724;
+}
+
+.center {
+  margin-left: 40vw;
+  margin-top: 45vh;
+}
+
+.button {
+  font-size: 20px;
+  transform: translateZ(0);
+  display: inline-block;
+  overflow: hidden;
+  height: 42px;
+  color: white; 
+  font-family: arial;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+  position: relative;
+  text-decoration: none;
+  margin-right: 20px;
+  
+  &:hover {
+    .onhover {
+      transform: translateX(0);
+      p{
+        transform: translateX(0);
+      }
+    }      
+  }    
+}
+
+.content {
+  position: relative;
+  z-index: 0;
+  height: 100%;
+  p {
+    margin: 0;
+    padding: 10px;
+    color: white;
+    transform:translateX(0);
+  }
+}
+
+.onhover {
+  position: absolute;
+  height: 100%;
+  z-index: 2;
+  top: 0;
+  background: white;
+  overflow: hidden;
+  transform: translateX(-100%);  
+  transition: all 0.4s cubic-bezier(.43,0,.45,.99);
+  font-weight: 600;
+  
+  p {
+    margin: 0;
+    padding: 10px;
+    color: #141724;
+    transition: all 0.4s cubic-bezier(.43,0,.45,.99);
+    overflow: hidden;
+    transform:translateX(100%);
+  }
 }
