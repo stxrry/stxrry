@@ -1,3 +1,3 @@
 # stxrry
-hello this is stxrry.
-welcome to my website.
+
+© all rights reserved by the owner
