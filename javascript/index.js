@@ -1,9 +1,9 @@
-document.getElementById('date').innerHTML = new Date().toDateString();
-
 // Wrap every letter in a span
 $('.ml16').each(function(){
   $(this).html($(this).text().replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>"));
 });
+
+document.getElementById('date').innerHTML = new Date().toDateString();
 
 anime.timeline({loop: true})
   .add({
